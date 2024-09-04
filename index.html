@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tonalidad RGB Futurista</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="card futuristic-card shadow-lg">
+            <div class="card-header text-center text-white">
+                <h1>RGB Color Picker</h1>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mb-4">
+                            <label for="colorPicker" class="form-label text-white">Color Picker</label>
+                            <input type="color" id="colorPicker" class="form-control form-control-color mb-3 futuristic-input">
+                        </div>
+                        <div class="mb-3">
+                            <label for="redRange" class="form-label text-white">Red</label>
+                            <input type="range" class="form-range futuristic-range" min="0" max="255" id="redRange">
+                            <input type="number" class="form-control futuristic-input mt-2" min="0" max="255" id="redInput" placeholder="0-255">
+                        </div>
+                        <div class="mb-3">
+                            <label for="greenRange" class="form-label text-white">Green</label>
+                            <input type="range" class="form-range futuristic-range" min="0" max="255" id="greenRange">
+                            <input type="number" class="form-control futuristic-input mt-2" min="0" max="255" id="greenInput" placeholder="0-255">
+                        </div>
+                        <div class="mb-3">
+                            <label for="blueRange" class="form-label text-white">Blue</label>
+                            <input type="range" class="form-range futuristic-range" min="0" max="255" id="blueRange">
+                            <input type="number" class="form-control futuristic-input mt-2" min="0" max="255" id="blueInput" placeholder="0-255">
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <div id="colorBox" class="rounded shadow-sm futuristic-box mb-3"></div>
+                        <p id="hexCode" class="fw-bold fs-4 text-neon"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer text-center">
+                <p class="text-neon">Encuentra tu combinacion perfecta!</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
